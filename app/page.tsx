@@ -107,7 +107,7 @@ export default function Home() {
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleSearch()}
-            className="bg-[#D9D9D9] text-black text-[28px] placeholder:text-black placeholder:opacity-50 placeholder:font-bold placeholder:ps-3 rounded-[5px] w-[150%] h-[65px] border-[1px] border-black"
+            className="bg-[#D9D9D9] text-black text-[28px] placeholder:text-black placeholder:opacity-50 placeholder:font-bold placeholder:ps-3 rounded-[5px] lg:w-[150%] w-[125%] h-[65px] border-[1px] border-black"
           />
           <div>
             <a onClick={handleRandom} className="cursor-pointer">
@@ -142,7 +142,7 @@ export default function Home() {
                   alt="Save to favorites"
                 />
               </a>
-              <p className="text-[24px]">Save to Favorites</p>
+              <p className="text-[18px] lg:text-[24px]">Save to Favorites</p>
             </div>
             <div className="grid place-items-center">
               <a onClick={() => {
@@ -159,7 +159,7 @@ export default function Home() {
                   alt="Remove from favorites"
                 />
               </a>
-              <p className="text-[24px]">Remove from Favorites</p>
+              <p className="text-[18px] lg:text-[24px]">Remove from Favorites</p>
             </div>
           </div>
           <p className="md:text-7xl text-5xl font-bold">
@@ -194,7 +194,7 @@ export default function Home() {
           </div>
         </section>
         <article className="mt-10 py-3 text-3xl w-fit rounded-10 text-center text-black bg-[#e1e5f2] mx-auto px-5">
-          <p className="text-[32px]">Pokemon's Evolution Path:</p>
+          <p className="text-[28px] lg:text-[32px]">Pokemon's Evolution Path:</p>
           <p className="text-[30px]">{evolutionPath || "Stage1 -> Stage2 -> Stage3"}</p>
         </article>
         <section className="place-items-center grid md:grid-cols-3 md:grid-rows-1 grid-cols-1 grid-rows-3 mt-8 mb-15 sm:mb-5">
@@ -212,7 +212,7 @@ export default function Home() {
             )
           )}
         </section>
-        <section className="grid grid-cols-1 text-[28px] lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 mt-10 lg:pb-10 pb-5 place-items-center mx-5 mb-15 md:gap-5">
+        <section className="grid grid-cols-1 text-[28px] lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 md:mt-10 lg:pb-10 pb-5 place-items-center mx-5 mb-15 gap-2 md:gap-5">
           {[
             { info: "Pokemon's Types:", value: pokemonInfo?.types },
             { info: "Pokemon's Abilities:", value: pokemonInfo?.abilities },
